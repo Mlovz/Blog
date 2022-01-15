@@ -1,0 +1,29 @@
+.auth__page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .auth__box {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #dbdbdb;
+    .form-group {
+      .type__pass {
+        position: relative;
+        span {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          display: flex;
+          i {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "./mixin";
+@import "./variables";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $bg_dark_800;
+  color: #fff;
+}
+
+button {
+  color: #fff;
+  border-radius: 15px;
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+input {
+  background: $bg_dark_400;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+@import "./components/auth";
+@import "./components/navbar";
+@import "./components/spash";
+@import "./components/avatar";
+
+//pages
+@import "./pages/home";
+@import "./pages/profile";
+@import "./pages/category";
+@import "./pages/create-blog";
+@import "./pages/category-detail";

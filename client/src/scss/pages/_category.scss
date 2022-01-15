@@ -1,0 +1,25 @@
+.category {
+  padding-top: $nav_height;
+  &__item ~ &__item {
+    margin-top: 20px;
+  }
+  &__item {
+    @include flex(center, space-between);
+    background: $bg_dark_400;
+    padding: 15px;
+    border-radius: 15px;
+    > div {
+      i {
+        font-size: 20px;
+        cursor: pointer;
+        &:nth-child(1) {
+          color: #4d76ff;
+        }
+        &:nth-child(2) {
+          color: #e24444;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

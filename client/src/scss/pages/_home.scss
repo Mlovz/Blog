@@ -1,0 +1,16 @@
+.home {
+  &__blogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 15px;
+    .card {
+      color: #000;
+    }
+    .card a {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+}
